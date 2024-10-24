@@ -1,0 +1,68 @@
+        background-image: url(https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_symbol.png);
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        min-height: 50px;
+
+
+        .login-container {
+    background-color: #37454785;
+    padding: 40px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+   
+}
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #393939;
+    color: #ffffff;
+}
+.login-container button {
+    width: 100px;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #007ACC;
+    color: white;    border: none;
+    border-radius: 4px;
+}
+.login-container button:hover {
+    background-color: #005A9E;
+}
+.login-container .forgot-password {
+    margin-top: 15px;
+    color: #9CDCFE;
+}
+.login-container .forgot-password a {
+    color: #9CDCFE;
+    text-decoration: none;
+}
+.login-container .forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    background: url(images/951149-dark-blue-background-wallpaper-1920x1080-lockscreen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 120px;
+}
+.img{
+    position: absolute;
+    top: 290px;
+    width: 100px;
+    left: 720px;
+    z-index: 10; 
+}

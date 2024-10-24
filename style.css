@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body {
+    background: #241e39;
+}
+*{
+    padding: 0; margin: 0;
+}
+.start a{
+    color: rgb(213, 212, 212);
+    width: fit-content;
+    text-decoration: none;
+    padding: 10px;;
+    font-size: 40px;
+}
+.start a:hover{
+    color: rgb(255, 255, 255);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background:none;
+    gap: 20px;
+    height:100px;
+    align-items: center;
+    padding: 10px;;
+    padding-right: 20px;
+}
+header h1, h3{
+    display: flex;
+    text-align: left;
+    padding: 100px;
+    padding-top: 2px;
+}
+.logo{
+    width: 230px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+.logins{
+    text-align: right;
+}
+
+.start {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.text{
+    font-family: "Modern Antiqua", serif;
+    font-size: 60px;
+}
+
+.free{
+    border: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 150px;
+}
+.free a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius:10px;
+    border-color: #ffffff;
+    
+}
+.free p{
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: left;
+    text-align: left;
+    padding-left: 140px;
+    padding-top: 150px;
+    
+}
+.download p{
+    font-size: 30px;
+    color: rgb(184, 184, 184);
+}
+
+
+.free:hover{
+    border-color: #d26d00;
+}
+.line{
+    height: 3px;
+    width: 100px;
+    background:#d26d00 ;
+}
+
+.sign{
+    border: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sign a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    padding: 10px;
+
+}
+.sign :hover{
+   border-radius: 20px;
+   border-color: #d26d00;
+}
+
+video { 
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+
+    z-index: -1;
+}   
+h1{
+    font-family:Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    z-index: auto;
+}
+div img{
+    width: 450px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 135px;
+    gap: 5px;
+    padding-top: 110px;
+}
+.container{
+    display: flex;
+    place-items: center;
+    margin-inline: 14rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-container{
+    display: grid;
+    row-gap: 3rem;
+}
+.card-article{
+    position:relative;
+    overflow: hidden;
+}
+.card-img{
+    width: 350px;
+    border-radius: 1.5rem;
+}
+.card-data{
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.755);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 35%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -7rem;
+    left: 100px;
+    right: 100px;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+;
+}
+.card-disciption{
+    display: block;
+    font-weight: 500;
+    font-size: var(--h2--small--font-size);
+    margin-bottom: .75rem;
+}
+.card-button{
+    color: rgb(66, 100, 88);
+    text-decoration: none;
+}
+.card-button:hover{
+    text-decoration: underline;
+}
+.card-article:hover .card-data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+
+}
+.card-article:hover{
+    animation: remove-overflow 2s forwards;
+}
+
+.card-article:not(:hover){
+    animation: show-overflow 2s forwards;
+
+}
+
+.card-article:not(:hover){
+    animation: remove-data 1s forwards;
+    
+}
+.login-button{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+@keyframes show-data{
+    50%{
+        transform: translateY(-2rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
+@keyframes remove-data{
+    0%{
+        transform: translateY(-0rem);
+    }
+    50%{
+        transform: translateY(2rem);
+    }
+    100%{
+        transform: translateY(.0rem);
+    }
+}
+@keyframes show-overflow{
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+.background{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-position: right;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 100%, rgba(156,156,156,1) 100%);
+}
+.join{
+    position: absolute;
+    color: rgb(203, 203, 168);
+    top:140%;
+    left: 10%;
+    font-size: 170px;
+    font-family: "Bebas Neue", sans-serif;
+    z-index: 10;
+}
+.battle{
+    position: absolute;
+    color: rgb(152, 152, 100);
+    top:160%;
+    left: 10%;
+    font-size: 170px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.now{
+    color: rgb(203, 203, 168);
+    text-decoration: none;
+    font-size: 35px;
+    position: absolute;
+    left: 11%;
+    top: 185%;
+    border-color: rgb(199, 199, 199);
+    border: 2px solid;
+    padding: 12px;
+    
+}
+.background-login{
+    height: 100vh;
+    position: relative;
+}
+.container-page{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 100%, rgba(156,156,156,1) 100%);
+    
+}
+.div-img{
+    position: absolute;
+    top: 1950px;
+    width: 100px;
+    left: 550px;
+    z-index: 10;
+}
+.black{
+    height: 250px;
+    width: 2100px;
+    background:#000000 ;
+    position:absolute;
+    top: 1000px;
+}
+.black-line{
+    height: 280px;
+    width: 2100px;
+    background:#000000 ;
+    position:absolute;
+    top: 1900px;
+}
+.logo-img{
+    position: absolute;
+    top: 1900px;
+    width: 100px;
+    left: 950px;
+    z-index: 10;
+}
+@media screen and (max-width: 380px){
+    .container{
+        margin-inline: 1rem;
+    }
+    .card-data{
+        width: 250px;
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+}
+@media screen and (mid-width: 1120px){
+    .container{
+        height: 100vh;
+    }
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
